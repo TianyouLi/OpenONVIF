@@ -30,10 +30,11 @@ cmake ../../examples/OnvifClient -DSDK="$SC_DIR/bin/OnvifSDK-b" || checkErr "Onv
 make || checkErr "OnvifClient make failed"
 cd ..
 # dir for Server
-mkdir server
-cd server
-cmake ../../examples/OnvifServer -DSDK="$SC_DIR/bin/OnvifSDK-b" || checkErr "OnvifServer config failed"
-make || checkErr "OnvifServer make failed"
-cd ../..
+# mkdir server
+# cd server
+# cmake ../../examples/OnvifServer -DSDK="$SC_DIR/bin/OnvifSDK-b" || checkErr "OnvifServer config failed"
+# make || checkErr "OnvifServer make failed"
+# cd ..
 
+cd ..
 succMessage "We are all good"

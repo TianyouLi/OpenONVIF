@@ -171,14 +171,12 @@ include_directories(${PROJECT_SOURCE_DIR}/../common
 set(HEADERS
     ${PROJECT_SOURCE_DIR}/../common/sigrlog.h
     ${PROJECT_SOURCE_DIR}/../common/helpers.h
-    ${PROJECT_SOURCE_DIR}/gen/include/stdsoap2.h
     ${PROJECT_SOURCE_DIR}/include/stringGenerator.h
     ${PROJECT_SOURCE_DIR}/include/BaseServer.h
     ${PROJECT_SOURCE_DIR}/include/BaseClient.h
     ${PROJECT_SOURCE_DIR}/include/OnvifSDK.h)
 
 set(SOURCES
-    ${PROJECT_SOURCE_DIR}/gen/source/stdsoap2.cpp
     ${PROJECT_SOURCE_DIR}/source/BaseServer.cpp
     ${PROJECT_SOURCE_DIR}/source/BaseClient.cpp
     ${PROJECT_SOURCE_DIR}/../common/helpers.cpp)
